@@ -13,7 +13,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.options("/*", cors(corsOptions)); // habilita preflight
+app.options("*", cors(corsOptions)); // habilita preflight
 app.use(express.json());
 
 
